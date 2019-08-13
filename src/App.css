@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.p-dialog-mask{
+  /* z-index: 0!important;  */
+}
+.lobby{
+  color: #fff;
+	background: linear-gradient(-45deg, rgb(93, 215, 219), rgb(59, 45, 138), rgb(1, 104, 61), rgb(194, 117, 1));
+	background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
+  perspective:2000px;
+  height: 100%;
+  color: #222;
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.p-component-overlay {
+  /* top: auto !important; */
+}
+/* .lobbychild1{
+  transform: rotateY(45deg);
+
+}
+.lobbychild2{
+  transform: rotateY(-45deg);
+
+
+} */
+html, body,#root {
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(18,33,91,1) 1%,rgba(38,60,201,1) 27%,rgba(33,151,206,1) 64%,rgba(137,245,255,1) 100%); 
+}
+.lobbychild1{
+  background:rgb(179, 246, 255);
+}
+.lobbychild2{
+  margin-left: 1em;
+  padding: 0 !important;  
+}
+textarea {
+  resize: none;
+}
+.MatchButton{
+  margin-top: 10%!important;
+  background-color: rgba(256,256,256,.03)!important;
+  background-image: -webkit-linear-gradient(top, #111, #0c0c0c)!important;
+  background-image: -moz-linear-gradient(top, #111, #0c0c0c)!important;
+  background-image: -o-linear-gradient(top, #111, #0c0c0c)!important;
+  font-size: 1.5em!important;
+  font-family: 'Amethysta', serif!important;
+  text-align: center!important;
+  line-height: 1.4em!important;
+  text-transform: uppercase!important;
+  letter-spacing: .3em!important;
+  white-space:nowrap!important;
+}
+.MatchWindow{
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  background: #62c4f1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.p-dialog .p-dialog-content{
+  margin: 0!important;
+  padding: 0!important;
+}
+.p-dialog-titlebar{
+  display: none;
+}
+.BehindModal{
+  z-index: 5;
+  position: fixed;
+  background: rgba(76,76,76,0.5);
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+}
+.profile{
+  background: rgba(135, 255, 239, 0.5);
+  margin-bottom: 1em;
+  margin-top: 0!important;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+}
